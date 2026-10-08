@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 3.1.2
+  version: 3.3.0
   python_min: '3.11'
 
 package:
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/g/graphrag-chunking/graphrag_chunking-${{ version }}.tar.gz
-  sha256: ca3fdf7528eade61eea0e2f5a1ab3b207a6674b8b92b50334fee7b301ddd1517
+  sha256: 56d3fcfc4cbdfbb8caf86d03c3f2d6365a316fdf125137f3e0c4b9b35f4774ca
 
 build:
   number: 0
@@ -24,7 +24,7 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }},<3.14
-    - graphrag-common ==3.1.2
+    - graphrag-common ==3.3.0
     - pydantic >=2.13,<3.dev0
 tests:
   - python:
